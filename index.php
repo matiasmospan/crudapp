@@ -21,6 +21,11 @@ $result = $link->query($sql);
     <div class="container">
         <div class="row">
             <div class="col-md-12">
+                <div class="card" style="margin-top: 20px;margin-bottom: 20px;">
+                    <div class="card-body">
+                        <h2 class="pull-left">User Details <a href="create.php" class="btn btn-success pull-right">Add New User</a></h2>
+                    </div>
+                </div>
                 <?php
                 if ($result->num_rows > 0) {
                         echo "<table class='table table-bordered table-striped'>";
