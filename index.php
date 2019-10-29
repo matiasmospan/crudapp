@@ -7,7 +7,7 @@ $result = $link->query($sql);
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PHP CRUD : bishrulhaq.com</title>
+    <title>Restro</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
@@ -21,12 +21,6 @@ $result = $link->query($sql);
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="card" style="margin-top: 20px;margin-bottom: 20px;">
-                    <div class="card-body">
-                        <h2 class="pull-left">User Details <a href="create.php" class="btn btn-success pull-right">Add New User</a></h2>
-                        <h6>Find more interesting tutorials at <a href="https://bishrulhaq.com/">bishrulhaq.com</a></h6>
-                    </div>
-                </div>
                 <?php
                 if ($result->num_rows > 0) {
                         echo "<table class='table table-bordered table-striped'>";
