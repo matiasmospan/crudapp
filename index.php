@@ -1,5 +1,5 @@
 <?php
-require_once "http://config:8443/config.php";
+require_once http://config:8443/config.php;
 $sql = "SELECT * FROM users";
 $result = $link->query($sql);
 ?>
