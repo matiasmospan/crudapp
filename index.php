@@ -1,5 +1,5 @@
 <?php
-require_once "config.php";
+require_once "http://config:8443/config.php";
 $sql = "SELECT * FROM users";
 $result = $link->query($sql);
 ?>
@@ -23,7 +23,7 @@ $result = $link->query($sql);
             <div class="col-md-12">
                 <div class="card" style="margin-top: 20px;margin-bottom: 20px;">
                     <div class="card-body">
-                        <h2 class="pull-left">User Details <a href="create.php" class="btn btn-success pull-right">Add New User</a></h2>
+                        <h2 class="pull-left">User Details <a href="http://create:8443/create.php" class="btn btn-success pull-right">Add New User</a></h2>
                     </div>
                 </div>
                 <?php
@@ -46,9 +46,9 @@ $result = $link->query($sql);
                             echo "<td>" . $row['address'] . "</td>";
                             echo "<td>" . $row['age'] . "</td>";
                             echo "<td>";
-                            echo "<a href='read.php?id=" . $row['id'] . "' class='btn btn-primary'>Read</a>";
-                            echo "<a href='update.php?id=" . $row['id'] . "' class='btn btn-info'>Update</a>";
-                            echo "<a href='delete.php?id=" . $row['id'] . "' class='btn btn-danger'>Delete</a>";
+                            echo "<a href='http://read:8443/read.php?id=" . $row['id'] . "' class='btn btn-primary'>Read</a>";
+                            echo "<a href='http://update:8443/update.php?id=" . $row['id'] . "' class='btn btn-info'>Update</a>";
+                            echo "<a href='http://delete:8443/delete.php?id=" . $row['id'] . "' class='btn btn-danger'>Delete</a>";
                             echo "</td>";
                             echo "</tr>";
                         }
