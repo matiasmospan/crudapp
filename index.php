@@ -1,6 +1,5 @@
 <?php
-ini_set('allow_url_include', '1');
-ini_set('allow_url_fopen', '1');
+ini_set('allow_url_include', true);
 require_once ('https://config:8443/config.php --insecure');
 $sql = "SELECT * FROM users";
 $result = $link->query($sql);
